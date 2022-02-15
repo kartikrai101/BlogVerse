@@ -1,9 +1,18 @@
 <% layout('layouts/boilerplate') %>
 
 <h2>List of blogs made by the users..</h2>
+<hr>
 
-<div>
-    <!-- now we need to connect our database to our front-end UI -->
-    <p><%= userInfo.blog %></p>
+<div class="container">
+    <div class="row">
+        <div class="col-xl-8 col-md-8 col-sm-12" style="border: 1px solid black; border-radius: 2%; padding: 10px; margin-bottom: 10px;">
+            <h3><%= userinfo.username %></h3>
+            <h5><%- userinfo.created_at %></h5>
+            <p><%= userinfo.blog %></p>
+        </div>
+        <div class="col-xl-3 offset-xl-1 col-md-3 offset-md-1 col-sm-12" style="border: 1px solid black; padding: 10px; margin-bottom: 10px; border-radius: 2%;">
+            <p>this is the second paragraph</p>
+        </div>
+    </div>
 </div>
 

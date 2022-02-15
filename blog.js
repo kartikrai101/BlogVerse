@@ -4,26 +4,31 @@ const ejsMate = require('ejs-mate');
 const mysql = require('mysql2');
 
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'Kartik@2002',
-    database: 'blogverse',
-    insecureAuth: true
+    host            :  'localhost',
+    user            : 'root',
+    password        : 'Kartik@2002',
+    database        : 'blogverse',
+    insecureAuth    : true
 });
 
 app.set('view engine', 'ejs');
 app.engine('ejs', ejsMate);
 
+app.use(express.urlencoded({ extended:false }));
+app.use(express.json());
+
 // we use the app.use function to run middlewares because they always run no matter what was the incoming route of request to our server
 
 app.get('/blogverse', (req, res)=>{
-    connection.query('SELECT * FROM blogs', function(error, result){
+
+    const userInfo = 'SELECT * FROM users JOIN blogs ON users.id = blogs.user_id;'
+    connection.query(userInfo, function(error, result){
         if(error){
             throw error;
         } 
         console.log(result[0]); 
-        const userInfo = result[0];
-        res.render('blogVerse', {userInfo});
+        const userinfo = result[0];
+        res.render('blogVerse', {userinfo});
     })
 });
 
@@ -44,6 +49,11 @@ app.get('/blogverse/login', (req, res)=>{
 
 app.get('/blogverse/signup', (req, res)=>{
     res.render('pages/signup');
+});
+
+app.post('/blogverse/signup', (req, res)=>{
+    
+    res.redirect('/blogverse');
 });
 
 app.listen(3000, ()=>{

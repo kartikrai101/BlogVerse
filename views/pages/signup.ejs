@@ -1,1 +1,161 @@
-<h1>sign up</h1>
+<%- layout('layouts/boilerplate') %>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div style=" background-color: #0d1b2a; color: white;"> 
+            <h1 style="text-align: center;">SignUp!</h1>
+        </div>
+        
+        <div class="col-xl-12 col-md-10 col-sm-12 mb-6" style=" background-image: url('https://images.unsplash.com/photo-1608434903972-1c35c741f8e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'); background-size: cover;  ">
+            <form>
+                
+                <div class="mt-4" style="margin-left: 20px; margin-right: 20px;">
+                    <label for="username" class="form-label" style="color: black; font-size:25px;">Username</label>
+                    <input type="text" class="form-control" placeholder="Username" id="username" > 
+                </div>
+
+                <div class="mt-4" style="margin-left: 20px; margin-right: 20px;">
+                    <label for="password" class="form-label" style="color: black; font-size:25px;">Password</label>
+                    <input type="password" class="form-control" placeholder="Make a Password" id="password" > 
+                </div>
+
+                <div class="mt-4" style="margin-left: 20px; margin-right: 20px;">
+                    <label for="cnfmPassword" class="form-label" style="color: black; font-size:25px; ">Confirm Password</label>
+                    <input type="password" class="form-control" placeholder="Confirm your Password" id="cnfmPassword" > 
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="mt-4 col-xl-5 col-md-5 col-sm-12" style="margin-left: 20px; margin-right: 20px;">
+                            <label for="f_name" class="form-label" style="color: black; font-size:25px;">First Name</label>
+                            <input type="text" class="form-control" placeholder="First Name" id="f_name" > 
+                        </div>
+        
+                        <div class="mt-4 col-xl-5 offset-xl-2 col-md-5 offset-md-2 col-sm-12" style="margin-left: 20px; margin-right: 20px;">
+                            <label for="l_name" class="form-label" style="color: black; font-size:25px;">Last Name</label>
+                            <input type="text" class="form-control" placeholder="Last Name" id="l_name" > 
+                        </div>
+                    </div>                    
+                </div>
+
+                <div class="mt-4" style="margin-left: 20px; margin-right: 20px;">
+                    <label for="bio" class="form-label" style="color: black; font-size:25px;">Bio</label>
+                    <input type="text" class="form-control" placeholder="Bio" id="username" > 
+                </div>
+                
+                
+                
+                <div class="mt-4" style="margin-left: 20px; margin-right: 20px;">
+                    <label for="email" class="form-label" style="color: black; font-size:25px;">Email</label>
+                    <input type="email" class="form-control" placeholder="Email Address" id="email">
+                </div>
+
+                <div class="mt-4" style="margin-left: 20px; margin-right: 20px;">
+                    <label for="dob" class="form-label" style="color: black; font-size:25px;">Your Birthday</label>
+                    <input type="date" class="form-control" placeholder="Enter your date of birth" id="dob">
+                </div>
+
+                <div class="mt-4" style="margin-left:20px; margin-right:20px;">
+                    <label for="interest" class="form-label" style="color: black; font-size: 25px;">Fields of Interest</label>
+                    
+                    <div class="container">
+                        <div class="row"> 
+                            <div class="col-xl-4" style=" background-color: rgba(211, 77, 72, 0.4);">
+                                <input class="form-check-input" type="checkbox" value="" id="sci&tech">
+                                <label class="form-check-label" style="padding:1px; color:black; font-size:20px;" for="sci&tech">
+                                    Science and Tech
+                                </label>
+                            </div>
+                            <div class="col-xl-4" style="background-color:rgba(85, 180, 185, 0.4);">
+                                <input class="form-check-input" type="checkbox" value="" id="art">
+                                <label class="form-check-label" style="color:black; font-size:20px;" for="art">
+                                    Art
+                                </label>
+                            </div>
+                            <div class="col-xl-4" style="background-color: rgba(101, 193, 106, 0.4);">
+                                <input class="form-check-input" type="checkbox" value="" id="sports">
+                                <label class="form-check-label" style="color:black; font-size:20px;" for="sports">
+                                    Sports
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row"> 
+                            <div class="col-xl-4" style=" background-color: rgba(211, 77, 72, 0.4);">
+                                <input class="form-check-input" type="checkbox" value="" id="music">
+                                <label class="form-check-label" style="color:black; font-size:20px;" for="music">
+                                    Music and Podcasts
+                                </label>
+                            </div>
+                            <div class="col-xl-4" style="background-color: rgba(85, 180, 185, 0.4);">
+                                <input class="form-check-input" type="checkbox" value="" id="arch">
+                                <label class="form-check-label" style="color:black; font-size:20px;" for="arch">
+                                    Architecture
+                                </label>
+                            </div>
+                            <div class="col-xl-4" style="background-color: rgba(101, 193, 106, 0.4);">
+                                <input class="form-check-input" type="checkbox" value="" id="dance">
+                                <label class="form-check-label" style="color:black; font-size:20px;" for="dance">
+                                    Dance and Dance Forms
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row"> 
+                            <div class="col-xl-4" style=" background-color: rgba(211, 77, 72, 0.4);">
+                                <input class="form-check-input" type="checkbox" value="" id="edu">
+                                <label class="form-check-label" style="color:black; font-size:20px;" for="edu">
+                                    Education 
+                                </label>
+                            </div>
+                            <div class="col-xl-4" style="background-color:rgba(85, 180, 185, 0.4);">
+                                <input class="form-check-input" type="checkbox" value="" id="politics">
+                                <label class="form-check-label" style="color:black; font-size:20px;" for="politics">
+                                    Politics and Journalism
+                                </label>
+                            </div>
+                            <div class="col-xl-4" style="background-color: rgba(101, 193, 106, 0.4);">
+                                <input class="form-check-input" type="checkbox" value="" id="env">
+                                <label class="form-check-label" style="color:black; font-size:20px;" for="env">
+                                    Environment and Agriculture
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row" > 
+                            <div class="col-xl-4" style=" background-color: rgba(211, 77, 72, 0.4);"> 
+                                <input class="form-check-input" type="checkbox" value="" id="comp">
+                                <label class="form-check-label" style="color:black; font-size:20px;" for="comp">
+                                    Computer and Coding
+                                </label>
+                            </div>
+                            <div class="col-xl-4" style="background-color:rgba(85, 180, 185, 0.4);">
+                                <input class="form-check-input" type="checkbox" value="" id="movie">
+                                <label class="form-check-label" style="color:black; font-size:20px;" for="movie">
+                                    Movies and Series
+                                </label>
+                            </div>
+                            <div class="col-xl-4" style="background-color: rgba(101, 193, 106, 0.4);">
+                                <input class="form-check-input" type="checkbox" value="" id="community">
+                                <label class="form-check-label" style="color:black; font-size:20px;" for="community">
+                                    Community Work
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="container mt-4" style="margin-left: 20px; margin-right: 20px;">
+                    <div class="row">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" style="color:black; font-size:20px;" for="flexCheckDefault">
+                              Receive updates on blogs related to your interests?
+                            </label>
+                          </div>
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

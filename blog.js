@@ -14,7 +14,7 @@ const connection = mysql.createConnection({
 app.set('view engine', 'ejs');
 app.engine('ejs', ejsMate);
 
-app.use(express.urlencoded({ extended:false }));
+app.use(express.urlencoded({ extended:false }));   // for parsing the data that is incoming from the form of form-data into object that we can use in our code
 app.use(express.json());
 
 // we use the app.use function to run middlewares because they always run no matter what was the incoming route of request to our server
@@ -26,7 +26,7 @@ app.get('/blogverse', (req, res)=>{
         if(error){
             throw error;
         } 
-        console.log(result[0]); 
+        //console.log(result[0]); 
         const userinfo = result[0];
         res.render('blogVerse', {userinfo});
     })
@@ -52,7 +52,7 @@ app.get('/blogverse/signup', (req, res)=>{
 });
 
 app.post('/blogverse/signup', (req, res)=>{
-    
+    console.log(req.body);
     res.redirect('/blogverse');
 });
 

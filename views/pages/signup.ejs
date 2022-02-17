@@ -6,74 +6,79 @@
             <h1 style="text-align: center; font-size: 70px;"><strong>SignUp!</strong></h1>
         </div>
         
-        <div class="col-xl-12 col-md-10 col-sm-12 mb-6" style="border: 1px solid black; border-radius: 3%; background-image: url('https://images.unsplash.com/photo-1608434903972-1c35c741f8e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'); background-size: cover;  ">
+        <div class="col-xl-12 col-md-10 col-sm-12 mb-6" style="border: 1px solid black; background-color: #000000; border-radius: 3%; ">
             <form action="/blogverse/signup" method="POST">
                 
                 <div class="mt-4" style="margin-left: 20px; margin-right: 20px;">
-                    <label for="username" class="form-label" style="color: black; font-size:25px;">Username</label>
-                    <input type="text" class="form-control" placeholder="Username" id="username" > 
+                    <label for="username" class="form-label" style="color: #e71d36; font-size:30px;"><Strong>Username</Strong></label>
+                    <input type="text" class="form-control" placeholder="Username" id="username" name="username"> 
                 </div>
 
                 <div class="mt-4" style="margin-left: 20px; margin-right: 20px;">
-                    <label for="password" class="form-label" style="color: black; font-size:25px;">Password</label>
-                    <input type="password" class="form-control" placeholder="Make a Password" id="password" > 
+                    <label for="password" class="form-label" style="color: #e71d36; font-size:30px;"><strong>Password</strong></label>
+                    <input type="password" class="form-control" placeholder="Make a Password" id="password" name="password" > 
                 </div>
 
                 <div class="mt-4" style="margin-left: 20px; margin-right: 20px;">
-                    <label for="cnfmPassword" class="form-label" style="color: black; font-size:25px; ">Confirm Password</label>
-                    <input type="password" class="form-control" placeholder="Confirm your Password" id="cnfmPassword" > 
+                    <label for="cnfmPassword" class="form-label" style="color: #e71d36; font-size:30px; "><strong>Confirm Password</strong></label>
+                    <input type="password" class="form-control" placeholder="Confirm your Password" id="cnfmPassword" name="confirm_password" > 
                 </div>
 
                 <div class="container">
                     <div class="row">
                         <div class="mt-4 col-xl-5 col-md-5 col-sm-12" style="margin-left: 20px; margin-right: 20px;">
-                            <label for="f_name" class="form-label" style="color: black; font-size:25px;">First Name</label>
-                            <input type="text" class="form-control" placeholder="First Name" id="f_name" > 
+                            <label for="f_name" class="form-label" style="color: #e71d36; font-size:25px;"><strong>First Name</strong></label>
+                            <input type="text" class="form-control" placeholder="First Name" id="f_name" name="first"> 
                         </div>
         
                         <div class="mt-4 col-xl-5 offset-xl-2 col-md-5 offset-md-2 col-sm-12" style="margin-left: 20px; margin-right: 20px;">
-                            <label for="l_name" class="form-label" style="color: black; font-size:25px;">Last Name</label>
-                            <input type="text" class="form-control" placeholder="Last Name" id="l_name" > 
+                            <label for="l_name" class="form-label" style="color: #e71d36; font-size:25px;"><strong>Last Name</strong></label>
+                            <input type="text" class="form-control" placeholder="Last Name" id="l_name" name="last"> 
                         </div>
                     </div>                    
                 </div>
 
                 <div class="mt-4" style="margin-left: 20px; margin-right: 20px;">
-                    <label for="bio" class="form-label" style="color: black; font-size:25px;">Bio</label>
-                    <input type="text" class="form-control" placeholder="Bio" id="username" > 
+                    <label for="formFileMultiple" class="form-label" style="color: #e71d36; font-size:30px;"><strong>Profile Picture</strong></label>
+                    <input class="form-control" type="file" id="formFileMultiple" multiple name="picture">
+                  </div>
+
+                <div class="mt-4" style="margin-left: 20px; margin-right: 20px;">
+                    <label for="bio" class="form-label" style="color: #e71d36; font-size:30px;"><strong>Bio</strong></label>
+                    <input type="text" class="form-control" placeholder="Bio" id="username" name="bio"> 
                 </div>
                 
                 
                 
                 <div class="mt-4" style="margin-left: 20px; margin-right: 20px;">
-                    <label for="email" class="form-label" style="color: black; font-size:25px;">Email</label>
-                    <input type="email" class="form-control" placeholder="Email Address" id="email">
+                    <label for="email" class="form-label" style="color: #e71d36; font-size:30px;"><strong>Email</strong></label>
+                    <input type="email" class="form-control" placeholder="Email Address" id="email" name="email">
                 </div>
 
                 <div class="mt-4" style="margin-left: 20px; margin-right: 20px;">
-                    <label for="dob" class="form-label" style="color: black; font-size:25px;">Your Birthday</label>
-                    <input type="date" class="form-control" placeholder="Enter your date of birth" id="dob">
+                    <label for="dob" class="form-label" style="color: #e71d36; font-size:30px;"><strong>Your Birthday</strong></label>
+                    <input type="date" class="form-control" placeholder="Enter your date of birth" id="dob" name="birthday">
                 </div>
 
                 <div class="mt-4" style="margin-left:20px; margin-right:20px;">
-                    <label for="interest" class="form-label" style="color: black; font-size: 25px;">Fields of Interest</label>
+                    <label for="interest" class="form-label" style="color: #e71d36; font-size: 30px;"><strong>Fields of Interest</strong></label>
                     
                     <div class="container">
                         <div class="row"> 
                             <div class="col-xl-4" style=" background-color: rgba(211, 77, 72, 0.4);">
-                                <input class="form-check-input" type="checkbox" value="" id="sci&tech">
+                                <input class="form-check-input" type="checkbox" value="" id="sci&tech" name="science_n_tech">
                                 <label class="form-check-label" style="padding:1px; color:black; font-size:20px;" for="sci&tech">
                                     Science and Tech
                                 </label>
                             </div>
                             <div class="col-xl-4" style="background-color:rgba(85, 180, 185, 0.4);">
-                                <input class="form-check-input" type="checkbox" value="" id="art">
+                                <input class="form-check-input" type="checkbox" value="" id="art" name="art">
                                 <label class="form-check-label" style="color:black; font-size:20px;" for="art">
                                     Art
                                 </label>
                             </div>
                             <div class="col-xl-4" style="background-color: rgba(101, 193, 106, 0.4);">
-                                <input class="form-check-input" type="checkbox" value="" id="sports">
+                                <input class="form-check-input" type="checkbox" value="" id="sports" name="sports">
                                 <label class="form-check-label" style="color:black; font-size:20px;" for="sports">
                                     Sports
                                 </label>
@@ -81,19 +86,19 @@
                         </div>
                         <div class="row"> 
                             <div class="col-xl-4" style=" background-color: rgba(211, 77, 72, 0.4);">
-                                <input class="form-check-input" type="checkbox" value="" id="music">
+                                <input class="form-check-input" type="checkbox" value="" id="music" name="music_n_podcast">
                                 <label class="form-check-label" style="color:black; font-size:20px;" for="music">
                                     Music and Podcasts
                                 </label>
                             </div>
                             <div class="col-xl-4" style="background-color: rgba(85, 180, 185, 0.4);">
-                                <input class="form-check-input" type="checkbox" value="" id="arch">
+                                <input class="form-check-input" type="checkbox" value="" id="arch" name="arch">
                                 <label class="form-check-label" style="color:black; font-size:20px;" for="arch">
                                     Architecture
                                 </label>
                             </div>
                             <div class="col-xl-4" style="background-color: rgba(101, 193, 106, 0.4);">
-                                <input class="form-check-input" type="checkbox" value="" id="dance">
+                                <input class="form-check-input" type="checkbox" value="" id="dance" name="dance">
                                 <label class="form-check-label" style="color:black; font-size:20px;" for="dance">
                                     Dance and Dance Forms
                                 </label>
@@ -101,19 +106,19 @@
                         </div>
                         <div class="row"> 
                             <div class="col-xl-4" style=" background-color: rgba(211, 77, 72, 0.4);">
-                                <input class="form-check-input" type="checkbox" value="" id="edu">
+                                <input class="form-check-input" type="checkbox" value="" id="edu" name="edu">
                                 <label class="form-check-label" style="color:black; font-size:20px;" for="edu">
                                     Education 
                                 </label>
                             </div>
                             <div class="col-xl-4" style="background-color:rgba(85, 180, 185, 0.4);">
-                                <input class="form-check-input" type="checkbox" value="" id="politics">
+                                <input class="form-check-input" type="checkbox" value="" id="politics" name="politics">
                                 <label class="form-check-label" style="color:black; font-size:20px;" for="politics">
                                     Politics and Journalism
                                 </label>
                             </div>
                             <div class="col-xl-4" style="background-color: rgba(101, 193, 106, 0.4);">
-                                <input class="form-check-input" type="checkbox" value="" id="env">
+                                <input class="form-check-input" type="checkbox" value="" id="env" name="env">
                                 <label class="form-check-label" style="color:black; font-size:20px;" for="env">
                                     Environment and Agriculture
                                 </label>
@@ -121,19 +126,19 @@
                         </div>
                         <div class="row" > 
                             <div class="col-xl-4" style=" background-color: rgba(211, 77, 72, 0.4);"> 
-                                <input class="form-check-input" type="checkbox" value="" id="comp">
+                                <input class="form-check-input" type="checkbox" value="" id="comp" name="comp">
                                 <label class="form-check-label" style="color:black; font-size:20px;" for="comp">
                                     Computer and Coding
                                 </label>
                             </div>
                             <div class="col-xl-4" style="background-color:rgba(85, 180, 185, 0.4);">
-                                <input class="form-check-input" type="checkbox" value="" id="movie">
+                                <input class="form-check-input" type="checkbox" value="" id="movie" name="movies_n_series">
                                 <label class="form-check-label" style="color:black; font-size:20px;" for="movie">
                                     Movies and Series
                                 </label>
                             </div>
                             <div class="col-xl-4" style="background-color: rgba(101, 193, 106, 0.4);">
-                                <input class="form-check-input" type="checkbox" value="" id="community">
+                                <input class="form-check-input" type="checkbox" value="" id="community" name="community">
                                 <label class="form-check-label" style="color:black; font-size:20px;" for="community">
                                     Community Work
                                 </label>
@@ -146,8 +151,8 @@
                 <div class="container mt-4" style="margin-left: 20px; margin-right: 20px;">
                     <div class="row">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" style="color:black; font-size:20px;" for="flexCheckDefault">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name="email_or_not">
+                            <label class="form-check-label" style="color:#403d39; font-size:20px;" for="flexCheckDefault">
                               Receive updates on blogs related to your interests?
                             </label>
                           </div>
